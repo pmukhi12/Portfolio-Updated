@@ -2,9 +2,15 @@
     color: whitesmoke
 }
 
+.main {
+  
+    background-size: 100%;
+    height: 800px;
+    background-repeat: no-repeat;
+}
 
 .introduction {
-    background-image: url("../images/ignant-art-james-turrell-skyspace-zumtobel-002.jpeg");
+    background-image: url("../images/james-turrell.jpeg");
     background-size: 100%;
     height: 800px;
     background-repeat: no-repeat;
@@ -12,7 +18,26 @@
 }
 
 .portfolio-begin {
+    background-image: url("../images/backgound.jpeg");
     height: 800px;
     background-color: darkgray;
+
+}
+
+
+
+.profile-pic {
+    height: 700px;
+    width: 400px;
+    background-image: url("../images/profile-pic.jpeg");
+    background-repeat: no-repeat;
+    background-size: 400px 700px;
+    height: 700px;
+    text-align: center;
+    text-decoration: none;
+}
+
+h5 {
+    color:gray
 }
 
