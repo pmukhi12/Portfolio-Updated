@@ -1,6 +1,6 @@
 # Portfolio-Updated
 
-Description: Creative Portfolio of all the Projects I have built!
+Description: Creative Portfolio of the Projects I have built!
 
 Deployed: https://pmukhi12.github.io/Portfolio-Updated/
 
