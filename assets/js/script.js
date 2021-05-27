@@ -1,7 +1,12 @@
 var introTextEl = document.getElementsByClassName('intro-text');
 var hiEl = document.getElementById('hi');
 var portolioBeginEl = document.getElementById('portfolio-begin');
-console.log(introTextEl);
+var projectEls = document.getElementsByClassName('project');
+var githubLinkEl = document.getElementById('github-link');
+var githubDescEl = document.getElementById('github-desc');
+var bgModalEl = document.getElementById('bg-modal');
+var modalContentEl = document.getElementById('modal-content');
+console.log(projectEls);
 
 
 function changeFontColor() {
@@ -19,10 +24,36 @@ function changeFontColor() {
     }
 }
 
+
+// console.log(document.getElementById('modal-content').style);
+
+function addpreview() {
+    bgModalEl.style.display = "flex";
+    if (this.id === "art-gallery") {
+        // document.getElementById('modal-content').style.backgroundImage = "url('../images/Art-Gallery-SS.jpeg')";
+
+    };
+
+
+}
+
 function scrollToPortfolio() {
     portolioBeginEl.scrollIntoView();
 }
 
-hiEl.addEventListener('mouseover', changeFontColor)
+function clickOutOfDesc() {
+    bgModalEl.style.display = "none";
+    console.log(bgModalEl.style.display);
+};
 
-hiEl.addEventListener('mouseover', scrollToPortfolio)
+hiEl.addEventListener('mouseover', changeFontColor);
+
+hiEl.addEventListener('mouseover', scrollToPortfolio);
+
+for (let i = 0; i < projectEls.length; i++) {
+    projectEls[i].addEventListener('click',addpreview)
+}
+
+
+
+document.getElementById('x-button').addEventListener('click', clickOutOfDesc)
