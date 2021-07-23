@@ -92,10 +92,20 @@ h5 {
     margin-left: 400px;
     background-color: white;
     color:black;
-    background-image: url("../images/Art-Gallery-SS.jpeg");
     background-size: 100%;
+    background-image: url('../images/note-taker.png');
     background-repeat:no-repeat;
     opacity: 0.6;
+}
+
+#modal-text {
+    width: 250px;
+    height: 50px;
+    background-color: burlywood;
+}
+#modal-text a {
+    color: blue;
+    text-decoration: underline;
 }
 
 .bg-modal a {   
